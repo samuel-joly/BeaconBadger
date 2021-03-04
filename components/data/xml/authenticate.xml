@@ -1,0 +1,23 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:auth="http://auth.hq.services.horoquartz.fr/" xmlns:xsd="http://www.horoquartz.fr/services/hq/auth/xsd" xmlns:core="http://www.horoquartz.fr/ws/core">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <auth:getToken>
+         <!--Optional:-->
+         <tokenRequest>
+            <!--Optional:-->
+            <xsd:user></xsd:user>
+            <!--Optional:-->
+            <xsd:password></xsd:password>
+            <!--Optional:-->
+            <xsd:clientCode></xsd:clientCode>
+            <!--Zero or more repetitions:-->
+            <xsd:parameters>
+               <!--Optional:-->
+               <core:key></core:key>
+               <!--Optional:-->
+               <core:value></core:value>
+            </xsd:parameters>
+         </tokenRequest>
+      </auth:getToken>
+   </soapenv:Body>
+</soapenv:Envelope>
